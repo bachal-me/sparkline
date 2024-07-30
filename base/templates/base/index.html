@@ -1,0 +1,414 @@
+{% extends "base/base.html" %}
+{% block title %} Sparkline Labs {% endblock title %}
+{% load static %}
+{% block body %}
+
+<!-- ====== 1.2. hero section ====== -->
+<section class="hero">
+    <div class="container aos-init aos-animate" data-aos="zoom-in">
+        <div>
+            <div class="hero-social-icon flex">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <hr class="d-md-block d-sm-none d-none">
+            </div>
+            <div class="center-data">
+                <h1>Sparkline Labs</h1>
+                <h3>BUILDING YOUR EMPIRE DIGITALLY</h3>
+                <div class="center-btn flex">
+                    <a href="{% url 'contact' %}" class="btn_hover1">Get Started</a>
+                    <a href="{% url 'portfolio' %}" class="btn_hover2">Discover More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ====== End of 1.2. hero section ====== -->
+<!-- ====== 1.3. card section ====== -->
+<section class="feature">
+    <div class="container">
+        <div class="flex">
+            <div class="header-card aos-init aos-animate" data-aos="fade-up">
+                <div>
+                    <figure><img src="{% static 'base/Images/icon/feature1.png' %}" class="feature-img1" alt="feature">
+                    </figure>
+                    <h4>CUSTOMIZED SOLUTIONS</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                        has been the industry's standard dummy text ever.
+                    </p>
+                </div>
+            </div>
+            <div class="header-card aos-init aos-animate" data-aos="fade-down">
+                <div>
+                    <figure><img src="{% static 'base/Images/icon/feature2.png' %}" alt="feature"></figure>
+                    <h4>ROI-DRIVEN APPROACH</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                        has been the industry's standard dummy text ever.
+                    </p>
+                </div>
+            </div>
+            <div class="header-card aos-init aos-animate" data-aos="fade-up">
+                <div>
+                    <figure><img src="{% static 'base/Images/icon/feature3.png' %}" alt="feature"></figure>
+                    <h4>CREATIVE SOLUTION</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                        has been the industry's standard dummy text ever.
+                    </p>
+                </div>
+            </div>
+            <div class="header-card aos-init aos-animate" data-aos="fade-down">
+                <div>
+                    <figure><img src="{% static 'base/Images/icon/feature4.png' %}" alt="feature"></figure>
+                    <h4>EXPERT TEAM</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                        has been the industry's standard dummy text ever.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ====== End of 1.3. card section ====== -->
+<!-- ====== 1.4. logoipsum section ====== -->
+<section class="logoipsum">
+    <div class="container">
+        <div class="flex flex-col gap-2">
+            <hr class="hr1">
+            <h3 data-aos="zoom-in" class="mb-15 aos-init aos-animate">OUR CLIENTS</h3>
+        </div>
+        <div class="logoipsum-slider slick-initialized aos-init aos-animate" data-aos="zoom-in">
+            <div class="logos-list slick-track">
+                {% for client in clients %}
+                    <figure class="logo-item slick-slide slick-current slick-active" data-slick-index="0"
+                        aria-hidden="false" style="width: 258px;" tabindex="0">
+                        <img src="{{ client.logo.url }}" alt="logoipsum">
+                    </figure>
+                {% endfor %}
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+</section>
+<!-- ====== End of 1.4. logoipsum section ====== -->
+<!-- ====== 1.5. About us section ====== -->
+<section class="about">
+    <div class="container">
+        <div class="container-center about-data flex-sb">
+            <div class="w-50 aos-init aos-animate" data-aos="fade-up">
+                <!-- <div class="flex about-title">
+                    <hr class="about-hr">
+                    <h2>About</h2>
+                </div> -->
+                <h2>Explore Our Services And Boost Your Online Presence
+                </h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                    been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                    galley of type and scrambled it to make a type
+                    specimen book. It has survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged.
+                </p>
+                <div class="flex gap-1 mt-15">
+                    <i class="fa-solid fa-check"></i>
+                    <h6>Lorem Ipsum is simply dummy text of the printing.
+                    </h6>
+                </div>
+                <div class="flex gap-1 mt-15">
+                    <i class="fa-solid fa-check"></i>
+                    <h6>Lorem Ipsum is simply dummy text of the printing.</h6>
+                </div>
+                <div class="flex about-btns gap-2 mt-30">
+                    <a href="{% url 'contact' %}" class="btn_hover1">Get Started</a>
+                    <a href="{% url 'portfolio' %}" class="btn_hover2">Discover More</a>
+                </div>
+            </div>
+            <div class="about-imgs flex flex-center w-50 aos-init aos-animate" data-aos="fade-down">
+                <div>
+                    <figure>
+                        <img src="{% static 'base/Images/home/about.png' %}" alt="img">
+                    </figure>
+                </div>
+                <div class="ab-count flex flex-center">
+                    <div class="flex flex-center">
+                        <h2>3</h2>
+                        <h2>+</h2>
+                    </div>
+                    <p>years of experience</p>
+                </div>
+                <div class="about-hr flex gap-1">
+                    <hr>
+                    <!-- <h6>Who we are</h6> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ====== End of 1.5. About us section ====== -->
+<!-- ====== 1.7. Services section ====== -->
+<section class="service">
+    <div class="service-1">
+        <div class="container">
+            <div class="container-center service-data aos-init aos-animate" data-aos="fade-down">
+                <div class="page-title w-66">
+                    <!-- <div class="flex gap-1">
+                                <hr class="service-hr1 ">
+                                <h5>SERVICES</h5>
+                            </div> -->
+                    <h2 class="mt-15">Services We Offer</h2>
+                    <p class="mt-15">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum
+                        has been the industry's standard dummy text ever.
+                    </p>
+                </div>
+                <!-- <div class="w-33 mt-15 flex flex-end">
+                            <a href="services.html" class="btn_hover2">View All Services</a>
+                        </div> -->
+                <hr class="mt-15 mb-15">
+            </div>
+            <div class="flex gap-1 mt-15 s-card">
+                {% for service in services %}
+                <div class="service-card aos-init aos-animate" data-aos="fade-up">
+                    <figure><img src="{% static 'base/Images/icon/slider2.png' %}" alt="slider2"></figure>
+                    <h3>{{service.title}}</h3>
+                    <p>{{service.headline}}</p>
+                    <a href="{% url 'services' service.slug_url %}">Read more <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ====== End of 1.6. Services section ====== -->
+<!-- 1.7 Testimonials Section -->
+<section class="testimonials">
+    <div class="container">
+        <div class="flex flex-col gap-2">
+            <hr class="hr1">
+            <h3 data-aos="zoom-in" class="mb-15 aos-init aos-animate color4">Testimonials</h3>
+        </div>
+        <div class="slider-container">
+            <div class="testimonials-slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                {% for testimonial in testimonials %}
+                <div class="testimonial">
+                    <div class="testi-row">
+                        <div class="client-info">
+                            <img src="{{ testimonial.client.image.url }}" alt="">
+                            <h5><b>{{testimonial.client.name}}</b></h5>
+                            <small>{{testimonial.client.position}} {{testimonial.client.company}}</small>
+                        </div>
+                        <div class="client-message">
+                            <img src="{% static 'base/Images/icon/quotation-mark-gray.svg' %}" alt="">
+                            <p>{{testimonial.message}}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <hr class="hr2">
+    </div>
+</section>
+<!-- End of 1.6 Testimonials Section -->
+<section class="portfolio">
+    <div class="portfolio-1">
+        <div class="container">
+            <div class="container-center portfo-center aos-init aos-animate" data-aos="fade-up">
+                <div class="page-title w-50">
+                    <div class="flex gap-1">
+                        <hr class="gallary-hr1">
+                        <h5>PORTFOLIO</h5>
+                    </div>
+                    <!-- <h2 class="mt-15">Our Latest Projects.</h2> -->
+                    <p>Our Latest Projects.</p>
+                </div>
+                <div class="flex flex-end w-100">
+                    <a href="{% url 'portfolio' %}" class="btn_hover2">View All Projects</a>
+                </div>
+            </div>
+            <hr class="mt-30">
+        </div>
+    </div>
+    <div class="gallary">
+        <div class="ga-bg"> </div>
+        <!-- overly -->
+        <span> </span>
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <div id="all" class="tabcontent" style="display: block;">
+                <div class="flex flex-center">
+                    <div class="case-studies-main flex-wrap flex-sb">
+                        {% for project in projects %}
+                        <div class="case-study">
+                            <a href="{% url 'case-study' project.slug_url %}">
+                                <img class="project-image" src="{{project.image.url}}" alt="">
+                            </a>
+                            <a href="{% url 'case-study' project.slug_url %}">
+                                <h3 class="case-title mt-15">{{project.title}}</h3>
+                            </a>
+                            <p>{{project.about_client}}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div id="design" class="tabcontent">
+                <div class="flex flex-center">
+                    <div class="flex w-100">
+                        <div class="w-33">
+                            <figure><img src="{% static 'base/Images/home/design-gallary-3.png' %}" alt="img"></figure>
+                        </div>
+                        <div class="w-33">
+                            <figure><img src="{% static 'base/Images/home/design-gallary-6.png' %}" alt="img"></figure>
+                        </div>
+                        <div class="w-33">
+                            <figure><img src="{% static 'base/Images/home/design-gallary-7.png' %}" alt="img"></figure>
+                        </div>
+                        <div class="w-33">
+                            <figure><img src="{% static 'base/Images/home/design-gallary-1.png' %}" alt="img"></figure>
+                        </div>
+                        <div class="w-33">
+                            <figure><img src="{% static 'base/Images/home/design-gallary-2.png' %}" alt="img"></figure>
+                        </div>
+                        <div class="w-33">
+                            <figure><img src="{% static 'base/Images/home/design-gallary-4.png' %}" alt="img"></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="development" class="tabcontent">
+                <div class="flex flex-center">
+                    <div class="flex w-100">
+                        <div class="w-33">
+                            <figure><img src="{% static 'base/Images/home/dev-gallary-3.png' %}" alt="img"></figure>
+                        </div>
+                        <div class="w-33">
+                            <figure><img src="{% static 'base/Images/home/dev-gallary-4.png' %}" alt="img"></figure>
+                        </div>
+                        <div class="w-33">
+                            <figure><img src="{% static 'base/Images/home/dev-gallary-5.png' %}" alt="img"></figure>
+                        </div>
+                        <div class="w-33">
+                            <figure><img src="{% static 'base/Images/home/dev-gallary-6.png' %}" alt="img"></figure>
+                        </div>
+                        <div class="w-33">
+                            <figure><img src="{% static 'base/Images/home/dev-gallary-7.png' %}" alt="img"></figure>
+                        </div>
+                        <div class="w-33">
+                            <figure><img src="{% static 'base/Images/home/dev-gallary-8.png' %}" alt="img"></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="branding" class="tabcontent">
+                <div class="flex flex-center">
+                    <div class="flex w-100">
+                        <div class="w-33">
+                            <figure><img src="{% static 'base/Images/home/brand-gallary-6.png' %}" alt="img"></figure>
+                        </div>
+                        <div class="w-66">
+                            <figure><img src="{% static 'base/Images/home/brand-gallary-8.png' %}" alt="img"></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ui_ux" class="tabcontent">
+                <div class="flex flex-center">
+                    <div class="flex w-100">
+                        <div class="w-33">
+                            <figure><img src="{% static 'base/Images/home/ui-ux-gallary-3.png' %}" alt="img"></figure>
+                        </div>
+                        <div class="w-66">
+                            <figure><img src="{% static 'base/Images/home/ui-ux-gallary-4.png' %}" alt="img"></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="markiting" class="tabcontent">
+                <div class="flex flex-center">
+                    <div class="flex w-100">
+                        <div class="w-33">
+                            <figure><img src="{% static 'base/Images/home/market-gallary-1.png' %}" alt="img"></figure>
+                        </div>
+                        <div class="w-66">
+                            <figure><img src="{% static 'base/Images/home/market-gallary-2.png' %}" alt="img"></figure>
+                        </div>
+                        <div class="w-66">
+                            <figure><img src="{% static 'base/Images/home/market-gallary-3.png' %}" alt="img"></figure>
+                        </div>
+                        <div class="w-33">
+                            <figure><img src="{% static 'base/Images/home/market-gallary-4.png' %}" alt="img"></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="seo" class="tabcontent">
+                <div class="flex flex-center">
+                    <div class="flex w-100">
+                        <div class="w-33">
+                            <figure><img src="{% static 'base/Images/home/seo-gallary-4.png' %}" alt="img"></figure>
+                        </div>
+                        <div class="w-33">
+                            <figure><img src="{% static 'base/Images/home/seo-gallary-5.png' %}" alt="img"></figure>
+                        </div>
+                        <div class="w-33">
+                            <figure><img src="{% static 'base/Images/home/seo-gallary-7.png' %}" alt="img"></figure>
+                        </div>
+                        <div class="w-66">
+                            <figure><img src="{% static 'base/Images/home/seo-gallary-6.png' %}" alt="img"></figure>
+                        </div>
+                        <div class="w-33">
+                            <figure><img src="{% static 'base/Images/home/seo-gallary-8.png' %}" alt="img"></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallary-hr flex gap-1 flex-end mt-15">
+                <h6>Creative Solution</h6>
+                <hr>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Team Section-->
+
+<!-- ====== 1.10. FAQ section ====== -->
+<section class="faq p-relative">
+    <span> </span>
+    <div class="container">
+        <div class="flex flex-wrap">
+            <div class="w-50 text-center aos-init aos-animate" data-aos="fade-up">
+                <div class="flex gap-2 ">
+                    <hr class="faq-hr1">
+                    <h5>FAQ</h5>
+                </div>
+                <h2 class="mt-1">Frequently Asked Questions</h2>
+                <p class="mt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has
+                    been the industry's standard dummy text ever.
+                </p>
+            </div>
+            <div class="w-50 mt-15">
+                <div class="accordion flex flex-col gap-2 aos-init aos-animate" id="accordionExample"
+                    data-aos="fade-down">
+                    {% for faq in faqs %}
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button">
+                                {{faq.question}}
+                                <img src="{% static 'base/Images/icon/plus.png' %}" alt="img">
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse">
+                            <p>{{faq.answer}}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ====== End of 1.11. FAQ section ====== -->
+
+{% endblock body %}
