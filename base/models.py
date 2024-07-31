@@ -2,11 +2,11 @@ from django.db import models
 from django.utils import timezone
 
 class Client(models.Model):
-    image = models.ImageField(upload_to='media/clients')
+    image = models.ImageField(upload_to='clients')
     name = models.CharField(max_length=50)
     position = models.CharField(max_length=50)
     company = models.CharField(max_length=50)
-    logo = models.ImageField(upload_to="media/clients")
+    logo = models.ImageField(upload_to="clients")
     
     def __str__(self):
         return self.name
@@ -18,7 +18,7 @@ class Service(models.Model):
     description = models.JSONField()
     key_features = models.JSONField()
     features = models.JSONField()
-    image = models.ImageField(upload_to='media/services')
+    image = models.ImageField(upload_to='services')
 
     @property
     def slug_url(self):
@@ -35,7 +35,7 @@ class Service(models.Model):
 class Testimonial(models.Model):
     client = models.ForeignKey(Client, on_delete=models.CASCADE)
     message = models.TextField(max_length=1000)
-    date_posted = models.DateField(default=timezone.now)
+    date_posted = models.DateTimeField(default=timezone.now)
 
 
     def __str__(self):
@@ -57,11 +57,11 @@ class ContactMessage(models.Model):
 class TeamMember(models.Model):
     name = models.CharField(max_length=50)
     works_as = models.CharField(max_length=50)
-    image = models.ImageField(upload_to='media/team', default='media/team/defualt.png')
+    image = models.ImageField(upload_to='team', default='team/defualt.png')
     facebook_link = models.CharField(null=True, blank=True, max_length=500)
     instagram_link = models.CharField(null=True, blank=True, max_length=500)
     whatsapp_link = models.CharField(null=True, blank=True, max_length=500)
-    date_posted = models.DateField(default=timezone.now)
+    date_posted = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
         return self.name
@@ -76,8 +76,8 @@ class Project(models.Model):
     technologies = models.JSONField(default=list)
     services = models.ManyToManyField(Service)
     client = models.ForeignKey(Client, on_delete=models.SET_NULL, null=True)
-    image = models.ImageField(upload_to='media/projects', default='media/projects/defualt.png')
-    date_posted = models.DateField(default=timezone.now)
+    image = models.ImageField(upload_to='projects', default='projects/defualt.png')
+    date_posted = models.DateTimeField(default=timezone.now)
     
     @property
     def slug_url(self):
@@ -94,7 +94,7 @@ class Project(models.Model):
 class Faq(models.Model):
     question = models.CharField(max_length=100)
     answer = models.TextField(max_length=2000)
-    date_posted = models.DateField(default=timezone.now)
+    date_posted = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
         return self.question
