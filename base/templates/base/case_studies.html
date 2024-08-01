@@ -25,7 +25,7 @@
                     <a href="{% url "case-study" project.slug_url %}">
                         <img class="project-image" src="{{project.image.url}}" alt="">
                     </a>
-                    <a href="{{project.slug_url}}"><h2 class="case-title">{{project.title}}</h2></a>
+                    <a href="{{project.slug_url}}"><h3 class="case-title">{{project.title}}</h3></a>
                     {% for desc in project.description %}
                         {{desc}}
                     {% endfor %}

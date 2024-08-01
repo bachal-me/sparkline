@@ -230,7 +230,9 @@
                 // normal options...
                 infinite: true,
                 autoplay: true,
-                autoplaySpeed: 1000,
+                autoplaySpeed: 0,
+                speed: 3000, // Set the transition speed to 3000 milliseconds (3 seconds)
+                cssEase: 'linear', // Use linear easing for a smooth transition
                 centerMode: true,
 
                 // the magic
@@ -277,5 +279,4 @@
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="{% static "base/js/script.js" %}"></script>
 </body>
-
 </html>
