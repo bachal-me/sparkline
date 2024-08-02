@@ -1,3 +1,4 @@
+# build_files.sh
 echo "BUILD START"
 
 # create a virtual environment named 'venv' if it doesn't already exist
