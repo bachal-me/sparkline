@@ -285,6 +285,11 @@
         margin: 2.5rem 0;
     }
 
+    .case-study-view {
+        width: 100vw;
+        flex-direction: column-reverse;
+    }
+    
     a {
         font-size: 14px;
         font-weight: 400;
@@ -504,7 +509,10 @@
         margin: 0;
     }
     
-
+    .case-study-view {
+        width: 100vw;
+        flex-direction: column-reverse;
+    }
     
     .page-title {
         display: flex;
@@ -950,6 +958,10 @@
         width: 60vw;
     }
 
+    .case-study-view {
+        width: 100vw;
+        flex-direction: column-reverse;
+    }
 }
 
 
@@ -1060,5 +1072,9 @@
 
     .work-hr{
         display: none;
+    }
+    .case-study-view {
+        width: 100vw;
+        flex-direction: column-reverse;
     }
 }
