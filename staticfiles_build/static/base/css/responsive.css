@@ -454,7 +454,7 @@
     }
 
     .service-page {
-        padding: 70px 0 50px 0;
+        padding: 10px 0 50px 0;
     }
 
     /* ====== contact.html ====== */
@@ -511,7 +511,28 @@
         flex-direction: column;
         /* justify-content: center; */
         align-items: center;
-        width: 85%;
+        width: 100%;
+    }
+
+    .case-study-view {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .case-study-left{
+        width: 100%;
+    }
+
+    .services-provided ul, .technologies-used ul {
+        display: flex;
+        flex-direction: row !important;
+        list-style: disc;
+        margin-left: 10px;
+        flex-wrap: wrap;
+    }
+
+    .services-provided li, .technologies-used li {
+        padding: 3px 26px 0 0;
     }
 
     .page-title h5{
