@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     var otherCollapse = otherButton.parentElement.nextElementSibling;
                     otherCollapse.style.maxHeight = null;
                     // Reset the image source and rotation for other accordion items
-                    acoimg[otherIndex].src = 'staticfiles/base/Images/icon/plus.png';
+                    acoimg[otherIndex].src = 'static/base/Images/icon/plus.png';
                     acoimg[otherIndex].style.transform = 'rotate(0deg)';
                     otherButton.style.backgroundColor = '#fff';
                 }
@@ -120,13 +120,13 @@ document.addEventListener("DOMContentLoaded", function () {
             if (collapse.style.maxHeight) {
                 collapse.style.maxHeight = null;
                 // Reset the image source, rotation, and background color when collapsing
-                acoimg[index].src = 'staticfiles/base/Images/icon/plus.png';
+                acoimg[index].src = 'static/base/Images/icon/plus.png';
                 acoimg[index].style.transform = 'rotate(90deg)';
                 button.style.backgroundColor = '';
             } else {
                 collapse.style.maxHeight = collapse.scrollHeight + "px";
                 // Change the image source, set rotation, and background color when expanding
-                acoimg[index].src = 'staticfiles/base/Images/icon/menus.png';
+                acoimg[index].src = 'static/base/Images/icon/menus.png';
                 acoimg[index].style.transform = 'rotate(180deg)';
                 button.style.backgroundColor = '#c1b0d5';
             }
