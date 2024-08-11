@@ -1,28 +1,28 @@
 {% extends "base/base.html" %}
-{% block title %} Sparkline Labs {% endblock title %}
+{% block title %} Sparkline Labs {% endblock %}
 {% load static %}
 {% block body %}
 <section class="service-page">
     <div class="container">
         <div class="container-center service-center aos-init aos-animate" data-aos="fade-up">
             <div class="page-title">
-                <div class="flex gap-1">
+                <div class="flex items-center gap-1">
                     <hr class="gallary-hr1">
                     <h3>{{ service.title }}</h3>
                 </div>
-                <!-- <h2 class="mt-15"></h2> -->
+                <!-- <h2 class="mt-[4.5rem]"></h2> -->
                 <p>{{ service.headline }}</p>
             </div>
-            <div class="flex flex-end w-100">
+            <div class="flex items-center flex-end w-100">
                 {% comment %} <a href="{% url 'portfolio' %}" class="btn_hover2">View All Projects</a> {% endcomment %}
             </div>
         </div>
-        <hr class="mt-30">
+        <hr class="mt-8">
         <div class="service-body">
             <div class="service-desciption">
                 <h3 class="service-dec-heading">Service Description</h3>
                     {% for item in service.description %}
-                        <p class="mt-1">{{item}}</p>
+                        <p class="mt-4">{{item}}</p>
                     {% endfor %}
             </div>
             <div class="service-keys">
@@ -39,7 +39,7 @@
                 <h3>Features</h3>
                 <ul>
                     {% for item in service.features %}
-                        <li class="mt-1">{{item}}</li>
+                        <li class="mt-4">{{item}}</li>
                     {% endfor %}                 
                 </ul>
             </div>
@@ -58,11 +58,11 @@
                 the industry's standard dummy text ever.
             </p>
         </div>
-        <div class="work-hr flex gap-1">
+        <div class="work-hr flex items-center gap-1">
             <hr>
             <h6>Project in steps</h6>
         </div>
-        <div class="work-line flex flex-center gap-1 flex-wrap p-relative">
+        <div class="work-line flex items-center flex-center gap-1 flex-wrap relative">
             <div class="aos-init aos-animate" data-aos="zoom-in">
                 <h2>01.</h2>
                 <h4>Make An Appointment</h4>
@@ -80,7 +80,7 @@
                 <h4>Start Project</h4>
             </div>
         </div>
-        <div class="flex flex-center" data-aos="zoom-in">
+        <div class="flex items-center flex-center" data-aos="zoom-in">
             <a href="{% url "contact" %}" class="btn_hover2">Contact Now</a>
         </div>
     </div>
@@ -97,7 +97,7 @@
                 the industry's standard dummy text ever.
             </p>
         </div>
-        <div class="work-hr flex gap-1">
+        <div class="work-hr flex items-center gap-1">
             <hr>
             <h6>Project in action</h6>
         </div>

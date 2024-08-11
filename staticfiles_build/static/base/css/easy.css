@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
 }
- 
+
 .flex-sb {
     display: flex;
     align-items: center;
@@ -69,7 +69,7 @@
     margin: 0;
 }
 
-.p-relative {
+.relative {
     position: relative;
 }
 
@@ -81,7 +81,7 @@
     margin-top: 1.5rem;
 }
 
-.mt-2{
+.mt-8 {
     margin-top: 2rem;
 }
 
@@ -89,7 +89,7 @@
     margin-top: 3rem !important;
 }
 
-.mt-4 {
+.mt-16 {
     margin-top: 4rem !important;
 }
 
@@ -97,19 +97,19 @@
     margin-top: 3rem !important;
 }
 
-.mt-45 {
+.mt-[4.5rem] {
     margin-top: 4.5rem !important;
 }
 
-.mb-1 {
+.mb-4 {
     margin-bottom: 1rem !important;
 }
 
-.mb-15 {
+.mb-6 {
     margin-bottom: 1.5rem !important;
 }
 
-.mb-2 {
+.mb-8 {
     margin-bottom: 2rem !important;
 }
 
@@ -121,51 +121,52 @@
     text-align: center;
 }
 
-.w-16 {
+.w-[16.66%] {
     width: 16.66666667%;
 }
 
-.w-33{
+.w-[33.333%] {
     width: 33.33333%;
 }
 
-.w-50{
+.w-1/2 {
     width: 50%;
 }
 
-.w-66 {
+.w-[66.66%] {
     width: 66.66666667%;
 }
 
-.d-block {
+.block {
     display: block;
 }
 
-.color1{
+.color1 {
     color: #ff7527;
-    
+
 }
 
-.color2{
-    
+.color2 {
+
     color: #fabf28;
 }
 
-.color3{
+.color3 {
     color: #d12bec;
 }
-.color4{
+
+.color4 {
     color: white;
 }
 
-.bold{
+.bold {
     font-weight: 900;
     font-size: 20px;
 }
 
 /* Button */
 
-.btn_hover1{
+.btn_hover1 {
     display: inline-block;
     position: relative;
     overflow: hidden;
@@ -178,7 +179,7 @@
     cursor: pointer;
 }
 
-.btn_hover1::before{
+.btn_hover1::before {
     border-radius: 50px;
     content: "";
     position: absolute;
@@ -191,7 +192,7 @@
     right: 0;
 }
 
-.btn_hover1:hover::before{
+.btn_hover1:hover::before {
     width: 0;
     background: linear-gradient(42deg, #7436bb 0.01%, #b520a3 100%);
 }

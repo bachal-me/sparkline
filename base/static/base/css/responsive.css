@@ -105,11 +105,11 @@
         width: 85vw;
     }
 
-    .testimonials-center{
+    .testimonials-center {
         justify-content: center;
     }
 
-    .page-title p{
+    .page-title p {
         padding-right: 0;
     }
 
@@ -314,7 +314,7 @@
         align-items: center;
     }
 
-    .service-center .w-50 {
+    .service-center .w-1/2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -470,7 +470,7 @@
         flex-wrap: wrap;
     }
 
-    .w-50 {
+    .w-1/2 {
         width: 100%;
     }
 
@@ -503,9 +503,9 @@
         width: 100%;
         margin: 0;
     }
-    
 
-    
+
+
     .page-title {
         display: flex;
         flex-direction: column;
@@ -519,11 +519,12 @@
         gap: 0;
     }
 
-    .case-study-left{
+    .case-study-left {
         width: 100%;
     }
 
-    .services-provided ul, .technologies-used ul {
+    .services-provided ul,
+    .technologies-used ul {
         display: flex;
         flex-direction: row !important;
         list-style: disc;
@@ -531,11 +532,12 @@
         flex-wrap: wrap;
     }
 
-    .services-provided li, .technologies-used li {
+    .services-provided li,
+    .technologies-used li {
         padding: 3px 26px 0 0;
     }
 
-    .page-title h5{
+    .page-title h5 {
         font-size: 30px;
     }
 
@@ -545,7 +547,7 @@
         align-items: center;
     }
 
-    .service-center .w-50 {
+    .service-center .w-1/2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -567,7 +569,7 @@
         font-size: 2rem;
     }
 
-    .portfolio{
+    .portfolio {
         padding: 0;
     }
 
@@ -575,8 +577,9 @@
         font-size: 2rem;
     }
 
-    .portfolio .container hr,  .team .container hr{
-       display: none;
+    .portfolio .container hr,
+    .team .container hr {
+        display: none;
     }
 
     .case-studies-center {
@@ -591,7 +594,7 @@
         margin-left: calc(-.5* var(--bs-gutter-x));
     }
 
-    .case-studies-center .w-50 {
+    .case-studies-center .w-1/2 {
         display: flex;
         flex-direction: column;
         width: 66%;
@@ -614,7 +617,7 @@
         flex-direction: column;
     }
 
-    .testimonials hr{
+    .testimonials hr {
         display: none;
     }
 
@@ -695,8 +698,8 @@
         display: none;
     }
 
-    .gallary .w-33,
-    .gallary .w-66 {
+    .gallary .w-[33.333%],
+    .gallary .w-[66.66%] {
         width: 100%;
     }
 
@@ -716,16 +719,16 @@
         flex-wrap: wrap !important;
     }
 
-    .portfo-center .w-50,
+    .portfo-center .w-1/2,
     .portfo-center .w-100,
-    .service-data .w-66,
-    .service-data .w-33,
-    .exp-center .w-66,
-    .exp-center .w-33,
-    .blog-center .w-33,
-    .blog-center .w-66,
-    .team-center .w-66,
-    .team-center .w-33 {
+    .service-data .w-[66.66%],
+    .service-data .w-[33.333%],
+    .exp-center .w-[66.66%],
+    .exp-center .w-[33.333%],
+    .blog-center .w-[33.333%],
+    .blog-center .w-[66.66%],
+    .team-center .w-[66.66%],
+    .team-center .w-[33.333%] {
         width: 100% !important;
         max-width: 100% !important;
         text-align: center !important;
@@ -838,10 +841,10 @@
         justify-content: center !important;
     }
 
-    .footer-center .w-33,
-    .footer-center .w-16,
-    .footer-center .w-16,
-    .footer-center .w-33 {
+    .footer-center .w-[33.333%],
+    .footer-center .w-[16.66%],
+    .footer-center .w-[16.66%],
+    .footer-center .w-[33.333%] {
         width: 100% !important;
         max-width: 100% !important;
 
@@ -901,7 +904,7 @@
         align-items: center;
     }
 
-    .service-center .w-50 {
+    .service-center .w-1/2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -967,7 +970,7 @@
         padding: 12px 26px 12px 26px !important;
     }
 
-    .testimonial p{
+    .testimonial p {
         width: 60vw;
     }
 
@@ -1046,7 +1049,7 @@
         align-items: center;
     }
 
-    .service-center .w-50 {
+    .service-center .w-1/2 {
         width: 85vw;
         display: flex;
         flex-direction: column;
@@ -1057,6 +1060,7 @@
     .service-center h3 {
         font-size: 30px;
     }
+
     .service-center p {
         padding-right: 0;
     }
@@ -1079,7 +1083,7 @@
         /* font-size: xx-small; */
     }
 
-    .work-hr{
+    .work-hr {
         display: none;
     }
 }

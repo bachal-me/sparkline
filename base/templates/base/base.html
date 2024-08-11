@@ -1,11 +1,16 @@
+{% load static tailwind_tags %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    {% tailwind_css %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sparkline Labz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="{% static 'base/css/easy.css' %}">
@@ -50,7 +55,7 @@
                         </ul>
                     </div>
 
-                    <div class="flex nav-right">
+                    <div class="flex items-center nav-right">
                         <a class="btn_hover1" href="{% url 'contact' %}">Book a free call</a>
                         <!-- header buttons -->
                         <!-- <i onclick="open_right_side()" class="fa-solid fa-bars"></i> -->
@@ -94,8 +99,8 @@
             <!-- ====== 1.12. Footer section ====== -->
             <footer>
                 <div class="container">
-                    <div class="footer-hr flex flex-col">
-                        <div class="flex gap-1 aos-init aos-animate" data-aos="fade-left">
+                    <div class="footer-hr flex items-center flex-col">
+                        <div class="flex items-center gap-1 aos-init aos-animate" data-aos="fade-left">
                             <hr>
                             <h6>Newsletter</h6>
                         </div>
@@ -106,7 +111,7 @@
                             the industry's standard dummy text ever.
                         </p>
                     </div>
-                    <form id="footer-form" class="flex flex-sb gap-2 aos-init aos-animate" data-aos="zoom-in"
+                    <form id="footer-form" class="flex items-center flex-sb gap-2 aos-init aos-animate" data-aos="zoom-in"
                         data-aos-delay="400">
                         <div id="footer-message"></div>
                         <input type="email" required="" placeholder="Enter your mail">
@@ -115,14 +120,14 @@
                 </div>
                 <div class="footer-menu">
                     <div class="container">
-                        <div class="flex flex-start footer-center">
-                            <div class="w-33 flex flex-col gap-2 flex-start">
+                        <div class="flex items-center flex-start footer-center">
+                            <div class="w-33 flex items-center flex-col gap-2 flex-start">
                                 <a class="bold color2" href=""><span class="color1">Sparkline</span> Labz</a>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt
                                     ut labore et dolore magna aliqua.
                                 </p>
-                                <span class="flex gap-2">
+                                <span class="flex items-center gap-2">
                                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
                                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -131,7 +136,7 @@
                             </div>
                             <div class="w-16 mt-1">
                                 <h4>Quick Links</h4>
-                                <ul class="flex flex-col gap-2 flex-start">
+                                <ul class="flex items-center flex-col gap-2 flex-start">
                                     <li><a href="">Home</a>
                                     </li>
                                     <li><a href="{% url "portfolio" %}">Case Studies</a>
@@ -141,7 +146,7 @@
                                 </ul>
                             </div>
                             <div class="w-16 mt-45 flex-end">
-                                <ul class="flex flex-col gap-2 flex-start">
+                                <ul class="flex items-center flex-col gap-2 flex-start">
                                     <!-- <li><a href="#">FAQ</a>
                                     </li> -->
                                     <li><a href="{% url "contact" %}">Contact</a>
@@ -152,9 +157,9 @@
                                     policy</a></li> -->
                                 </ul>
                             </div>
-                            <div class="w-33 mt-1 flex flex-col flex-start">
+                            <div class="w-33 mt-1 flex items-center flex-col flex-start">
                                 <h4>Get Connected</h4>
-                                <ul class="flex flex-col gap-2 flex-start">
+                                <ul class="flex items-center flex-col gap-2 flex-start">
                                     <li>
                                         <a href="#">
                                             <i class="fa-solid fa-phone"></i></a>
@@ -178,7 +183,7 @@
                     </div>
                 </div>
                 <div class="copyright">
-                    <div class="container flex flex-sb gap-2 flex-wrap">
+                    <div class="container flex items-center flex-sb gap-2 flex-wrap">
                         <h6>Copyright © 2024 By <a href="" class="p-0">
                                 Sparkline Labz. </a> All Rights Reserved.
                         </h6>
