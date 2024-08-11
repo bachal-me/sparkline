@@ -228,7 +228,7 @@ a {
     /* font-size: 16px;
     font-weight: 500;
     line-height: 22px; */
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     /* font-family: "Barlow", sans-serif; */
     text-decoration: none;
     transition: all 0.3s ease;
@@ -587,6 +587,7 @@ aside .pages {
 
 .show {
     height: 500px !important;
+    visibility: visible;
     transition: height 0.35s ease;
 }
 
@@ -1007,7 +1008,7 @@ aside .pages {
     border: 2px solid #fa982f;
     border-radius: 50%;
     padding: 3px;
-    font-size: 20px;
+    font-size: 12px;
     background: linear-gradient(66.75deg, #f54a48 0.87%, #fa982f 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

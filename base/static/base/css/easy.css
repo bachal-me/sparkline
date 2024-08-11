@@ -203,3 +203,6 @@
     /* font-weight: 600; */
     font-style: normal;
 }
+.lowercase-text{
+    text-transform: lowercase !important;
+}

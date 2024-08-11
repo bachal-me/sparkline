@@ -28,6 +28,9 @@
         max-width: 925px;
     }
 
+    .container-center a{
+        padding:15px 10px !important;
+    }
 
     .contact-page form {
         width: 80vw;
@@ -87,7 +90,7 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 18px;
-        padding: 5px 0px !important;
+        /* padding: 5px 0px !important; */
     }
 
     .testimonial {
@@ -187,12 +190,6 @@
         padding: 14px 30px 14px 30px;
     }
 
-    a {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 18px;
-        padding: 14px 30px 14px 30px !important;
-    }
 
     .h2_margin {
         margin: 13px 0;
@@ -285,13 +282,6 @@
         margin: 2.5rem 0;
     }
 
-    a {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 18px;
-        padding: 5px 0px !important;
-    }
-
     .gallary .container {
         margin-top: -355px;
     }
@@ -309,13 +299,6 @@
     }
 
     .service-center {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .service-center .w-1/2 {
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -470,10 +453,6 @@
         flex-wrap: wrap;
     }
 
-    .w-1/2 {
-        width: 100%;
-    }
-
     .about-imgs {
         margin-top: 50px;
     }
@@ -547,12 +526,6 @@
         align-items: center;
     }
 
-    .service-center .w-1/2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
     .container-center p {
         padding-right: 0;
@@ -592,14 +565,6 @@
         margin-top: calc(-1* var(--bs-gutter-y));
         margin-right: calc(-.5* var(--bs-gutter-x));
         margin-left: calc(-.5* var(--bs-gutter-x));
-    }
-
-    .case-studies-center .w-1/2 {
-        display: flex;
-        flex-direction: column;
-        width: 66%;
-        justify-content: center;
-        align-items: center;
     }
 
     .case-studies-center p {
@@ -697,12 +662,6 @@
     .team-hr1 {
         display: none;
     }
-
-    .gallary .w-[33.333%],
-    .gallary .w-[66.66%] {
-        width: 100%;
-    }
-
     .portfo-center {
         width: 100% !important;
         flex-direction: column;
@@ -717,22 +676,6 @@
     .team-center .gap-1 {
         justify-content: center !important;
         flex-wrap: wrap !important;
-    }
-
-    .portfo-center .w-1/2,
-    .portfo-center .w-100,
-    .service-data .w-[66.66%],
-    .service-data .w-[33.333%],
-    .exp-center .w-[66.66%],
-    .exp-center .w-[33.333%],
-    .blog-center .w-[33.333%],
-    .blog-center .w-[66.66%],
-    .team-center .w-[66.66%],
-    .team-center .w-[33.333%] {
-        width: 100% !important;
-        max-width: 100% !important;
-        text-align: center !important;
-        justify-content: center !important;
     }
 
     .team-center {
@@ -841,15 +784,6 @@
         justify-content: center !important;
     }
 
-    .footer-center .w-[33.333%],
-    .footer-center .w-[16.66%],
-    .footer-center .w-[16.66%],
-    .footer-center .w-[33.333%] {
-        width: 100% !important;
-        max-width: 100% !important;
-
-    }
-
     .footer-menu p {
         text-align: center;
         padding: 0;
@@ -899,13 +833,6 @@
     }
 
     .service-center {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .service-center .w-1/2 {
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -963,13 +890,6 @@
         padding: 12px 26px 12px 26px;
     }
 
-    a {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 20px;
-        padding: 12px 26px 12px 26px !important;
-    }
-
     .testimonial p {
         width: 60vw;
     }
@@ -1023,11 +943,6 @@
         line-height: 20px;
     }
 
-    p {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 20px;
-    }
 
     button {
         font-size: 14px;
@@ -1035,27 +950,12 @@
         line-height: 20px;
         padding: 12px 26px 12px 26px;
     }
-
-    a {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 20px;
-        padding: 12px 11px !important;
-    }
-
     .service-center {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .service-center .w-1/2 {
-        width: 85vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
     .service-center h3 {
         font-size: 30px;

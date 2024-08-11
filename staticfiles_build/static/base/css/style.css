@@ -208,12 +208,12 @@ h6 {
     font-family: "Raleway", sans-serif;
 }
 
-p {
+/* p {
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
     font-family: "Barlow", sans-serif;
-}
+} */
 
 button {
     font-size: 16px;
@@ -225,11 +225,11 @@ button {
 }
 
 a {
-    font-size: 16px;
+    /* font-size: 16px;
     font-weight: 500;
-    line-height: 22px;
-    text-transform: capitalize;
-    font-family: "Barlow", sans-serif;
+    line-height: 22px; */
+    /* text-transform: capitalize; */
+    /* font-family: "Barlow", sans-serif; */
     text-decoration: none;
     transition: all 0.3s ease;
     color: #c9c3c3;
@@ -587,6 +587,7 @@ aside .pages {
 
 .show {
     height: 500px !important;
+    visibility: visible;
     transition: height 0.35s ease;
 }
 
@@ -979,10 +980,10 @@ aside .pages {
     border: 1px solid;
 }
 
-.w-1/2 {
+/* .w-1/2 {
     flex: 0 0 auto;
     width: 50%;
-}
+} */
 
 .about-title {
     gap: 1rem;
@@ -1007,7 +1008,7 @@ aside .pages {
     border: 2px solid #fa982f;
     border-radius: 50%;
     padding: 3px;
-    font-size: 20px;
+    font-size: 12px;
     background: linear-gradient(66.75deg, #f54a48 0.87%, #fa982f 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1055,6 +1056,7 @@ aside .pages {
 .ab-count {
     flex-direction: column;
     text-align: center;
+    justify-content: center;
     background: linear-gradient(180deg, #ff7527 0%, #fabf28 100%);
     color: #ffffff;
     position: absolute;
@@ -1147,7 +1149,7 @@ aside .pages {
 
 .portfo-center .w-100 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 33.33333%;
 }
 
 .page-title {
@@ -1280,9 +1282,10 @@ aside .pages {
     justify-content: center;
 }
 
+/* 
 .w-[33.333%] {
     width: 33.33333333%;
-}
+} */
 
 .gallary-hr h6 {
     letter-spacing: 3.72px;
@@ -2241,9 +2244,9 @@ footer form button:hover {
     width: 33.33333333%;
 }
 
-.testimonials-center .w-1/2 {
+/* .testimonials-center .w-1/2 {
     width: 66%;
-}
+} */
 
 .testimonials-center h5 {
     color: #fff;
@@ -2426,9 +2429,9 @@ footer form button:hover {
     width: 33.33333333%;
 }
 
-.service-center .w-1/2 {
+/* .service-center .w-1/2 {
     width: 66%;
-}
+} */
 
 .service-center h5 {
     color: #fff;
@@ -2547,9 +2550,9 @@ footer form button:hover {
     width: 33.33333333%;
 }
 
-.case-studies-center .w-1/2 {
+/* .case-studies-center .w-1/2 {
     width: 66%;
-}
+} */
 
 .case-studies-center h5 {
     color: #fff;

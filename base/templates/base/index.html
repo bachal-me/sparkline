@@ -129,7 +129,7 @@
 <section class="about">
   <div class="container">
     <div class="container-center about-data flex-sb">
-      <div class="w-1/2 aos-init aos-animate" data-aos="fade-up">
+      <div class="sm:w-1/2 aos-init aos-animate" data-aos="fade-up">
         <!-- <div class="flex items-center about-title">
                     <hr class="about-hr">
                     <h2>About</h2>
@@ -143,13 +143,14 @@
           five centuries, but also the leap into electronic typesetting,
           remaining essentially unchanged.
         </p>
-        <div class="flex items-center gap-4 my-8">
-          <i class="fa-solid fa-check"></i>
-          <h6>Lorem Ipsum is simply dummy text of the printing.</h6>
+        
+        <div class="flex items-center gap-4 my-4">
+          <i class="fa-solid text-[16px] fa-check"></i>
+          <p class="text-[16px] text-white">Lorem Ipsum is simply dummy text of the printing.</h7>
         </div>
-        <div class="flex items-center gap-4 my-8">
+        <div class="flex items-center gap-4 my-4">
           <i class="fa-solid fa-check"></i>
-          <h6>Lorem Ipsum is simply dummy text of the printing.</h6>
+          <p class="text-[16px] text-white">Lorem Ipsum is simply dummy text of the printing.</h7>
         </div>
         <div class="flex items-center about-btns gap-5 mt-8">
           <a href="{% url 'contact' %}" class="btn_hover1">Get Started</a>
@@ -157,7 +158,7 @@
         </div>
       </div>
       <div
-        class="about-imgs flex items-center Justify-center w-1/2 aos-init aos-animate"
+        class="about-imgs flex items-center Justify-center sm:w-1/2 aos-init aos-animate"
         data-aos="fade-down"
       >
         <div>
@@ -189,7 +190,7 @@
         class="container-center service-data aos-init aos-animate"
         data-aos="fade-down"
       >
-        <div class="page-title w-[66.66%]">
+        <div class="page-title text-center sm:text-left sm:w-[66.66%]">
           <!-- <div class="flex items-center gap-4">
                                 <hr class="service-hr1 ">
                                 <h5>SERVICES</h5>
@@ -283,7 +284,7 @@
           <!-- <h2 class="mt-6">Our Latest Projects.</h2> -->
           <p>Our Latest Projects.</p>
         </div>
-        <div class="flex items-center flex-end w-100">
+        <div class="flex items-center mt-4 sm:mt-0 sm:flex-end sm:w-100">
           <a href="{% url 'portfolio' %}" class="btn_hover2"
             >View All Projects</a
           >
@@ -314,117 +315,6 @@
           </div>
         </div>
       </div>
-      <!-- <div id="design" class="tabcontent">
-                <div class="flex items-center Justify-center items-center">
-                    <div class="flex items-center w-100">
-                        <div class="w-[33.333%]">
-                            <figure><img src="{% static 'base/Images/home/design-gallary-3.png' %}" alt="img"></figure>
-                        </div>
-                        <div class="w-[33.333%]">
-                            <figure><img src="{% static 'base/Images/home/design-gallary-6.png' %}" alt="img"></figure>
-                        </div>
-                        <div class="w-[33.333%]">
-                            <figure><img src="{% static 'base/Images/home/design-gallary-7.png' %}" alt="img"></figure>
-                        </div>
-                        <div class="w-[33.333%]">
-                            <figure><img src="{% static 'base/Images/home/design-gallary-1.png' %}" alt="img"></figure>
-                        </div>
-                        <div class="w-[33.333%]">
-                            <figure><img src="{% static 'base/Images/home/design-gallary-2.png' %}" alt="img"></figure>
-                        </div>
-                        <div class="w-[33.333%]">
-                            <figure><img src="{% static 'base/Images/home/design-gallary-4.png' %}" alt="img"></figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="development" class="tabcontent">
-                <div class="flex items-center Justify-center items-center">
-                    <div class="flex items-center w-100">
-                        <div class="w-[33.333%]">
-                            <figure><img src="{% static 'base/Images/home/dev-gallary-3.png' %}" alt="img"></figure>
-                        </div>
-                        <div class="w-[33.333%]">
-                            <figure><img src="{% static 'base/Images/home/dev-gallary-4.png' %}" alt="img"></figure>
-                        </div>
-                        <div class="w-[33.333%]">
-                            <figure><img src="{% static 'base/Images/home/dev-gallary-5.png' %}" alt="img"></figure>
-                        </div>
-                        <div class="w-[33.333%]">
-                            <figure><img src="{% static 'base/Images/home/dev-gallary-6.png' %}" alt="img"></figure>
-                        </div>
-                        <div class="w-[33.333%]">
-                            <figure><img src="{% static 'base/Images/home/dev-gallary-7.png' %}" alt="img"></figure>
-                        </div>
-                        <div class="w-[33.333%]">
-                            <figure><img src="{% static 'base/Images/home/dev-gallary-8.png' %}" alt="img"></figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="branding" class="tabcontent">
-                <div class="flex items-center Justify-center items-center">
-                    <div class="flex items-center w-100">
-                        <div class="w-[33.333%]">
-                            <figure><img src="{% static 'base/Images/home/brand-gallary-6.png' %}" alt="img"></figure>
-                        </div>
-                        <div class="w-[66.66%]">
-                            <figure><img src="{% static 'base/Images/home/brand-gallary-8.png' %}" alt="img"></figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="ui_ux" class="tabcontent">
-                <div class="flex items-center Justify-center items-center">
-                    <div class="flex items-center w-100">
-                        <div class="w-[33.333%]">
-                            <figure><img src="{% static 'base/Images/home/ui-ux-gallary-3.png' %}" alt="img"></figure>
-                        </div>
-                        <div class="w-[66.66%]">
-                            <figure><img src="{% static 'base/Images/home/ui-ux-gallary-4.png' %}" alt="img"></figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="markiting" class="tabcontent">
-                <div class="flex items-center Justify-center items-center">
-                    <div class="flex items-center w-100">
-                        <div class="w-[33.333%]">
-                            <figure><img src="{% static 'base/Images/home/market-gallary-1.png' %}" alt="img"></figure>
-                        </div>
-                        <div class="w-[66.66%]">
-                            <figure><img src="{% static 'base/Images/home/market-gallary-2.png' %}" alt="img"></figure>
-                        </div>
-                        <div class="w-[66.66%]">
-                            <figure><img src="{% static 'base/Images/home/market-gallary-3.png' %}" alt="img"></figure>
-                        </div>
-                        <div class="w-[33.333%]">
-                            <figure><img src="{% static 'base/Images/home/market-gallary-4.png' %}" alt="img"></figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="seo" class="tabcontent">
-                <div class="flex items-center Justify-center items-center">
-                    <div class="flex items-center w-100">
-                        <div class="w-[33.333%]">
-                            <figure><img src="{% static 'base/Images/home/seo-gallary-4.png' %}" alt="img"></figure>
-                        </div>
-                        <div class="w-[33.333%]">
-                            <figure><img src="{% static 'base/Images/home/seo-gallary-5.png' %}" alt="img"></figure>
-                        </div>
-                        <div class="w-[33.333%]">
-                            <figure><img src="{% static 'base/Images/home/seo-gallary-7.png' %}" alt="img"></figure>
-                        </div>
-                        <div class="w-[66.66%]">
-                            <figure><img src="{% static 'base/Images/home/seo-gallary-6.png' %}" alt="img"></figure>
-                        </div>
-                        <div class="w-[33.333%]">
-                            <figure><img src="{% static 'base/Images/home/seo-gallary-8.png' %}" alt="img"></figure>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
       <div class="gallary-hr flex items-center gap-4 flex-end mt-6">
         <h6>Creative Solution</h6>
         <hr />
@@ -433,7 +323,7 @@
   </div>
 </section>
 <!-- Team Section-->
-<section class="inter-family dark:bg-gray-900">
+<section class="inter-family dark:bg-[#150725]">
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
     <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-46">
       <h2
@@ -856,8 +746,8 @@
 <section class="faq relative">
   <span> </span>
   <div class="container">
-    <div class="flex items-center flex-wrap">
-      <div class="w-1/2 text-center aos-init aos-animate" data-aos="fade-up">
+    <div class="flex flex-col sm:flex-row sm:items-center flex-wrap">
+      <div class="sm:w-1/2 text-center aos-init aos-animate" data-aos="fade-up">
         <div class="flex items-center gap-5">
           <hr class="faq-hr1" />
           <h5>FAQ</h5>
@@ -869,14 +759,14 @@
           ever.
         </p>
       </div>
-      <div class="w-1/2 mt-6">
+      <div class="sm:w-1/2 mt-6">
         <div
           class="accordion flex items-center flex-col gap-5 aos-init aos-animate"
           id="accordionExample"
           data-aos="fade-down"
         >
           {% for faq in faqs %}
-          <div class="accordion-item">
+          <div class="accordion-item bg-white">
             <h2 class="accordion-header">
               <button class="accordion-button" type="button">
                 {{faq.question}}

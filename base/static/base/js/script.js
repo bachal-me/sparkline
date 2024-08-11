@@ -26,6 +26,7 @@ function toggleCollapse(elementId) {
 
     // Toggle the 'show' class
     element.classList.toggle('show');
+    element.classList.toggle('collapse');
 
     // Toggle aria-expanded attribute
     var isExpanded = button.getAttribute('aria-expanded') === 'true';

@@ -5,7 +5,7 @@
 <section class="service-page">
     <div class="container">
         <div class="container-center service-center aos-init aos-animate" data-aos="fade-up">
-            <div class="page-title">
+            <div class="page-title mt-4">
                 <div class="flex items-center gap-1">
                     <hr class="gallary-hr1">
                     <h3>{{ service.title }}</h3>
@@ -13,7 +13,7 @@
                 <!-- <h2 class="mt-[4.5rem]"></h2> -->
                 <p>{{ service.headline }}</p>
             </div>
-            <div class="flex items-center flex-end w-100">
+            <div class="flex items-center mt-4 sm:mt-0 sm:flex-end sm:w-100">
                 {% comment %} <a href="{% url 'portfolio' %}" class="btn_hover2">View All Projects</a> {% endcomment %}
             </div>
         </div>
@@ -25,7 +25,7 @@
                         <p class="mt-4">{{item}}</p>
                     {% endfor %}
             </div>
-            <div class="service-keys">
+            <div class="service-keys flex flex-col sm:flex-row">
                 <img src="{{ service.image.url }}" alt="">
                 {% comment %} <ul class="keys-list"> {% endcomment %}
                     <ul class="keys-list">
@@ -101,7 +101,7 @@
             <hr>
             <h6>Project in action</h6>
         </div>
-        <div class="case-studies-main flex-wrap flex-sb">
+        <div class="case-studies-main flex flex-wrap flex-sb">
             {% for project in projects %}
             <div class="case-study">
                 <a href="{% url "case-study" project.slug_url %}">

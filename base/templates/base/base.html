@@ -84,7 +84,8 @@
                                 <div class="collapse" id="pages">
                                     <ul>
                                         {% for service in service_data %}
-                                        <li><a class="nav-link" href="{% url 'services' service.slug_url %}">{{ service.title }}</a>
+                                        <li>
+                                            <a class="nav-link" href="{% url 'services' service.slug_url %}">{{ service.title }}</a>
                                         </li>
                                         {% endfor %}
                                     </ul>
@@ -111,32 +112,31 @@
                             the industry's standard dummy text ever.
                         </p>
                     </div>
-                    <form id="footer-form" class="flex items-center flex-sb gap-2 aos-init aos-animate" data-aos="zoom-in"
-                        data-aos-delay="400">
+                    <form id="footer-form" class="flex justify-between flex-col sm:flex-row items-center gap-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="400">
                         <div id="footer-message"></div>
-                        <input type="email" required="" placeholder="Enter your mail">
+                        <input class="bg-transparent border-transparent focus:border-transparent focus:ring-0" type="email" required="" placeholder="Enter your mail">
                         <button type="submit" class="btn_hover1">Get Started</button>
                     </form>
                 </div>
                 <div class="footer-menu">
                     <div class="container">
-                        <div class="flex items-center flex-start footer-center">
-                            <div class="w-33 flex items-center flex-col gap-2 flex-start">
+                        <div class="flex flex-col sm:flex-row items-center justify-between footer-center">
+                            <div class="sm:w-[33%] flex items-start flex-col gap-6 flex-start">
                                 <a class="bold color2" href=""><span class="color1">Sparkline</span> Labz</a>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt
                                     ut labore et dolore magna aliqua.
                                 </p>
-                                <span class="flex items-center gap-2">
+                                <span class="flex items-center gap-6">
                                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
                                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
                                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                                 </span>
                             </div>
-                            <div class="w-16 mt-1">
+                            <div class="mt-4">
                                 <h4>Quick Links</h4>
-                                <ul class="flex items-center flex-col gap-2 flex-start">
+                                <ul class="flex gap-6 text-center flex-col justify-start items-center sm:items-start">
                                     <li><a href="">Home</a>
                                     </li>
                                     <li><a href="{% url "portfolio" %}">Case Studies</a>
@@ -145,30 +145,18 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="w-16 mt-45 flex-end">
-                                <ul class="flex items-center flex-col gap-2 flex-start">
-                                    <!-- <li><a href="#">FAQ</a>
-                                    </li> -->
-                                    <li><a href="{% url "contact" %}">Contact</a>
-                                </li>
-                                <!-- <li><a href="#">Team</a>
-                                    </li>
-                                   <li><a href="#">Privacy
-                                    policy</a></li> -->
-                                </ul>
-                            </div>
-                            <div class="w-33 mt-1 flex items-center flex-col flex-start">
+                            <div class="sm:w-[33%] mt-1 flex items-center sm:items-start flex-col">
                                 <h4>Get Connected</h4>
-                                <ul class="flex items-center flex-col gap-2 flex-start">
+                                <ul class="flex items-center sm:items-start flex-col gap-6">
                                     <li>
                                         <a href="#">
                                             <i class="fa-solid fa-phone"></i></a>
-                                        <a href="#" class="text-lowercase">Yourname@Email.Com</a>
+                                        <a href="#" class="text-lowercase">+123-456-7890</a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fa-regular fa-envelope"></i></a>
-                                        <a href="#">+123-456-7890</a>
+                                            <i class="fa-regular fa-envelope lowercase"></i></a>
+                                        <a class="lowercase-text" href="#">contact@sparklinelabz.com</a>
                                     </li>
                                     <li>
                                         <a href="#">
@@ -183,7 +171,7 @@
                     </div>
                 </div>
                 <div class="copyright">
-                    <div class="container flex items-center flex-sb gap-2 flex-wrap">
+                    <div class="container flex items-center justify-between gap-6 flex-wrap">
                         <h6>Copyright © 2024 By <a href="" class="p-0">
                                 Sparkline Labz. </a> All Rights Reserved.
                         </h6>
