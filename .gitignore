@@ -4,4 +4,5 @@ migrations
 .env
 db.sqlite3
 node_modules
+staticfiles_build
 myenv
