@@ -8,8 +8,8 @@ def home(request):
     services = Service.objects.all()
     clients = Client.objects.all()
     faqs = Faq.objects.all()
-    members = TeamMember.objects.all()
-    context = {"clients":clients, "testimonials":testimonials, "services":services, "projects":projects, "members":members, "faqs":faqs}
+    team = TeamMember.objects.all().order_by('joined_date')
+    context = {"clients":clients, "testimonials":testimonials, "services":services, "projects":projects, "team":team, "faqs":faqs}
     return render(request, 'base/index.html', context)
 
 def template(request):

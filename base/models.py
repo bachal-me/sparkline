@@ -15,9 +15,9 @@ class Client(models.Model):
 class Service(models.Model):
     title = models.CharField(max_length=100)
     headline = models.CharField(max_length=500)
-    description = models.JSONField()
-    key_features = models.JSONField()
-    features = models.JSONField()
+    description = models.JSONField(null=True, blank=True)
+    key_features = models.JSONField(null=True, blank=True)
+    features = models.JSONField(null=True, blank=True)
     image = models.ImageField(upload_to='services')
 
     @property
@@ -57,11 +57,12 @@ class ContactMessage(models.Model):
 class TeamMember(models.Model):
     name = models.CharField(max_length=50)
     works_as = models.CharField(max_length=50)
+    about = models.TextField(null=True, blank=True, max_length=500)
     image = models.ImageField(upload_to='team', default='team/defualt.png')
-    facebook_link = models.CharField(null=True, blank=True, max_length=500)
-    instagram_link = models.CharField(null=True, blank=True, max_length=500)
-    whatsapp_link = models.CharField(null=True, blank=True, max_length=500)
-    date_posted = models.DateTimeField(default=timezone.now)
+    linkedin = models.CharField(null=True, blank=True, max_length=500)
+    instagram = models.CharField(null=True, blank=True, max_length=500)
+    github = models.CharField(null=True, blank=True, max_length=500)
+    joined_date = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
         return self.name
@@ -69,10 +70,10 @@ class TeamMember(models.Model):
 class Project(models.Model):
     title = models.CharField(max_length=50)
     about_client = models.CharField(max_length=500)
-    description = models.JSONField()
-    problem = models.JSONField()
-    solution = models.JSONField()
-    challenges = models.JSONField()
+    description = models.JSONField(null=True, blank=True)
+    problem = models.JSONField(null=True, blank=True)
+    solution = models.JSONField(null=True, blank=True)
+    challenges = models.JSONField(null=True, blank=True)
     technologies = models.JSONField(default=list)
     services = models.ManyToManyField(Service)
     client = models.ForeignKey(Client, on_delete=models.SET_NULL, null=True)
