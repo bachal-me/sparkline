@@ -19,6 +19,7 @@ class Service(models.Model):
     key_features = models.JSONField(null=True, blank=True)
     features = models.JSONField(null=True, blank=True)
     image = models.ImageField(upload_to='services')
+    icon = models.ImageField(null=True, blank=True, upload_to='services')
 
     @property
     def slug_url(self):

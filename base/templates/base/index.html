@@ -12,7 +12,7 @@
         <hr class="d-mblock d-sm-none d-none" />
       </div>
       <div class="center-data">
-        <h1>Sparkline Labs</h1>
+        <h1>Sparkline Labz</h1>
         <h3>BUILDING YOUR EMPIRE DIGITALLY</h3>
         <div class="center-btn flex">
           <a href="{% url 'contact' %}" class="btn_hover1">Get Started</a>
@@ -176,9 +176,9 @@
     <div class="container">
       <div class="flex items-center gap-4 s-card">
         {% for service in services %}
-        <div class="service-card aos-init aos-animate bg-gray-800 border-gray-700 rounded-lg shadow" data-aos="fade-up">
+        <div class="service-card aos-init aos-animate flex flex-col justify-center items-center text-center bg-gray-800 border-gray-700 rounded-lg shadow" data-aos="fade-up">
           <figure>
-            <img class="service-figure-image" src="{% static 'base/Images/icon/slider2.png' %}" alt="slider2" />
+            <img class="service-figure-image" src="{{ service.icon.url }}" alt="slider2" />
           </figure>
           <h3>{{service.title}}</h3>
           <p>{{service.headline}}</p>
@@ -204,22 +204,23 @@
         {% for testimonial in testimonials %}
         <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
           <figure class="max-w-screen-md mx-auto">
-            <svg class="w-16 mx-auto mb-3 text-gray-600" viewBox="0 0 24 27" fill="none"
+            <svg class="w-12 sm:w-16 mx-auto mb-3 text-gray-600" viewBox="0 0 24 27" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
                 fill="currentColor" />
             </svg>
             <blockquote>
-              <p class="text-2xl font-medium text-white">{{ testimonial.message }}</p>
+              <p class="text-sm sm:text-2xl font-medium text-white">{{ testimonial.message }}</p>
             </blockquote>
             <figcaption class="flex items-center justify-center mt-6 gap-1">
               <img class="testimonal-image rounded-full"
                 src="{{ testimonial.client.image.url }}"
                 alt="profile picture">
-              <div class="flex items-center divide-gray-700">
+              <div class="flex flex-col items-start sm:flex-row sm:items-center divide-gray-700">
                 <div class="pr-1 text-[13px] font-medium text-white">{{ testimonial.client.name }}</div>
-                <div class="p1-1 text-[13px] sm:text-sm font-light text-gray-400">| {{ testimonial.client.position }} at {{ testimonial.client.company }}
+                <span class="hidden sm:inline p1-1 pr-1 text-[13px] sm:text-sm font-light text-gray-400">|</span>
+                <div class="p1-1 text-[13px] sm:text-sm font-light text-gray-400"> {{ testimonial.client.position }} at {{ testimonial.client.company }}
                 </div>
               </div>
             </figcaption>
