@@ -187,9 +187,13 @@
 
 
     .h2_margin {
+        font-size: 30px;
         margin: 13px 0;
     }
 
+    .title-h5{
+        font-size: 16px;
+    }
     .container {
         max-width: 757px;
     }
