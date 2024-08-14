@@ -22,8 +22,20 @@
         max-width: 925px;
     }
 
-    .container-center a{
-        padding:15px 10px !important;
+    .heading-hr-container {
+        flex-direction: column;
+    }
+
+    .service-hr1 {
+        width: 150px !important;
+    }
+
+    .about-bottom-hr {
+        width: 93vw !important;
+    }
+
+    .container-center a {
+        padding: 15px 10px !important;
     }
 
     .contact-page form {
@@ -331,8 +343,14 @@
         padding: 70px 0;
     }
 
-    .work-para {
+    .work-para,
+    .about .container .work-para {
         padding: 0 95px;
+    }
+
+
+    .about .container .work-para {
+        padding: 0px !important;
     }
 
     .work-line div:first-child {
@@ -621,7 +639,7 @@
         display: none;
     }
 
-  
+
     .portfo-center {
         width: 100% !important;
         flex-direction: column;
@@ -901,6 +919,7 @@
         line-height: 20px;
         padding: 12px 26px 12px 26px;
     }
+
     .service-center {
         flex-direction: column;
         justify-content: center;

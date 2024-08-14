@@ -914,6 +914,7 @@ aside .pages {
 .logoipsum {
     background-color: #150725;
     padding: 150px 0;
+    padding-bottom: 0;
     margin-top: -1px;
 }
 
@@ -944,6 +945,9 @@ aside .pages {
 
 .logoipsum img {
     width: 170px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
     margin: 0 auto;
 }
 
@@ -968,7 +972,7 @@ aside .pages {
 
 
 .about {
-    background: #3d0f41;
+    background: #150725;
     padding: 100px 0;
 }
 
@@ -994,10 +998,18 @@ aside .pages {
     color: #ffffff;
 }
 
-.about h5 {
-    color: #ffffff;
-    font-weight: 400;
-    font-family: "Barlow", sans-serif;
+.title-h5 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    font-family: "Raleway", sans-serif;
+}
+
+.h2_margin {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 51px;
+    font-family: "Raleway", sans-serif;
 }
 
 .about p {
@@ -1142,7 +1154,7 @@ aside .pages {
     display: flex;
     text-align: left;
     flex-wrap: wrap;
-    margin-top: calc(-1* var(--bs-gutter-y));
+    /* margin-top: calc(-1* var(--bs-gutter-y)); */
     margin-right: calc(-.5* var(--bs-gutter-x));
     margin-left: calc(-.5* var(--bs-gutter-x));
 }
@@ -1206,9 +1218,9 @@ aside .pages {
 }
 
 .gallary {
-    background-image: url('../images/bg/gallary-bg.png');
+    /* background-image: url('../images/bg/gallary-bg.png');
     background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     padding-bottom: 120px;
     position: relative;
     z-index: 1;
@@ -1301,7 +1313,7 @@ aside .pages {
 }
 
 .service-1 {
-    background: #3d0541;
+    background: #150725;
     padding: 0;
     padding-bottom: 120px;
 }
@@ -1351,12 +1363,11 @@ aside .pages {
 }
 
 .service-card {
-    border: 1px solid #b520a3;
-    background: linear-gradient(11deg, #7436bb 0.01%, #b520a3 100%);
+    /* border: 1px solid #b520a3; */
+    /* background: linear-gradient(11deg, #7436bb 0.01%, #b520a3 100%); */
     box-shadow: 8px 18px 30px 0 rgba(0, 0, 0, 0.2);
     padding: 40px 40px 30px 40px;
 }
-
 .service-card:hover {
     transform: scale(1.05);
     transition: all 0.4s ease;
@@ -1388,7 +1399,7 @@ aside .pages {
 }
 
 .service-card figure {
-    background: #fff;
+    /* background: #fff; */
     box-shadow: 10px 17px 28px 0 rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     padding: 12px;
@@ -1591,6 +1602,12 @@ aside .pages {
     color: #fff;
     padding: 0 290px;
 }
+
+.about .container .work-para {
+    padding: 0 180px;
+}
+
+
 
 .work-line {
     background-image: url(../Images/bg/work-line.png);
@@ -2104,13 +2121,21 @@ footer form button:hover {
 
 
 .testimonials {
-    background-image: url('../Images/bg/experience_bg.jpg');
-    background-size: cover;
-    background-position: center center;
-    padding-top: 150px;
+    background-color: #150725;
+    padding-top: 50px;
     margin-top: -1px;
 }
 
+.testimonal-image {
+    width: 50px;
+    height: 50px;
+}
+.slick-active {
+    width: 332px;
+}
+.service-figure-image{
+    background-blend-mode: color-burn;
+}
 
 .testimonials-center {
     display: flex;
@@ -2207,23 +2232,11 @@ footer form button:hover {
     /* margin-top: 24px; */
     display: flex;
     /* flex-direction: column; */
-    width: 60vw;
+    width: 72vw;
     align-items: center;
     justify-content: center;
 }
 
-
-.testimonial {
-    display: flex;
-    justify-content: flex-start;
-    background: linear-gradient(42deg, #7436bb 0.01%, #b520a3 100%);
-    margin: 20px;
-    padding: 35px 30px;
-    /* width: 60vw; */
-    border-radius: 20px;
-    color: white;
-    justify-content: space-between;
-}
 
 .testi-row {
     display: flex;
@@ -2231,12 +2244,12 @@ footer form button:hover {
 
 .slick-prev {
     left: -80px;
-    top: 150px;
+    top: 230px;
 }
 
 .slick-next {
     right: -80px;
-    top: 150px;
+    top: 230px;
 }
 
 .slick-arrow {
