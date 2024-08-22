@@ -58,7 +58,7 @@ class ContactMessage(models.Model):
 class TeamMember(models.Model):
     name = models.CharField(max_length=50)
     works_as = models.CharField(max_length=50)
-    about = models.TextField(null=True, blank=True, max_length=500)
+    about = models.TextField(null=True, blank=True, max_length=81)
     image = models.ImageField(upload_to='team', default='team/defualt.png')
     linkedin = models.CharField(null=True, blank=True, max_length=500)
     instagram = models.CharField(null=True, blank=True, max_length=500)

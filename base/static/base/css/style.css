@@ -284,7 +284,12 @@ header {
 }
 
 .navbar-logo {
-    margin-right: 25px;
+    /* margin-right: 25px; */
+    align-self: center;
+}
+
+.logo-img{
+    width: 190px;
 }
 
 .navbar-nav {
@@ -568,6 +573,7 @@ aside .pages {
 }
 
 .collapse_btn i {
+    font-family: "Roboto", sans-serif;
     border: 1px solid #d3c9c1;
     padding: 7px 8px;
     border-radius: 40px;
@@ -831,6 +837,7 @@ aside .pages {
     color: #ffffff;
     z-index: 1;
     letter-spacing: 0.8px;
+    font-family: "Roboto", sans-serif;
 }
 
 .btn_hover2::before {
@@ -1996,10 +2003,10 @@ footer form button:hover {
     margin-top: 77px;
 }
 
-.footer-menu img {
+/* .footer-menu img {
     width: 100px;
     filter: brightness(0) invert(1);
-}
+} */
 
 .footer-menu ul li a:hover {
     color: #f54a48;
