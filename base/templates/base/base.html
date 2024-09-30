@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{% static "favicon_io/apple-touch-icon.png" %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static "favicon_io//favicon-32x32.png" %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static "favicon_io//favicon-16x16.png" %}">
-    <link rel="manifest" href="/site.webmanifest">
+    {% comment %} <link rel="manifest" href="/site.webmanifest"> {% endcomment %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -26,6 +26,15 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1H170YGS8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P1H170YGS8');
+</script>
 <body>
     <div class="site-wrapper">
         <div class="header-index">
@@ -122,8 +131,7 @@
                         <div class="flex flex-col sm:flex-row items-center justify-between footer-center">
                             <div class="sm:w-[33%] flex items-start flex-col gap-6 flex-start">
                                 <a href="/"> <img class="logo-img" src="{% static 'base/Images/logo.png' %}" alt="Sparkline Labz" /></a>
-                                <p>We are committed to delivering top-tier digital solutions, tailored to your business needs. Our services are crafted with a keen understanding of current industry trends, ensuring we provide you with the highest quality and satisfaction.
-                                </p>
+                                <p>We have the expertise to bring your vision to life. Let's build something extraordinary together.</p>
                                 <span class="flex items-center gap-6">
                                     <a href="https://www.linkedin.com/company/sparklinelabz"><i class="fa-brands fa-linkedin"></i></a>
                                     <a href="https://www.instagram.com/sparkline.labz"><i class="fa-brands fa-instagram"></i></a>
